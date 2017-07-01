@@ -8,4 +8,8 @@ This is a repository of a 3-person group project I did in University of Toronto'
 Summary:
 - Created a promotional website for a makebelieve product.
 
-Course taken: MEDE106 Project Development & Presentation
+Courses Involved: 
+
+MEDE106: Project Development & Presentation
+
+MEDE105: Interface, Navigation II
