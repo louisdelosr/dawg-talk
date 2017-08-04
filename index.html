@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Dawg Talk Accessories | DAWGTALK</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="js/responsiveslides.min.js"></script>
+  	 <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+
+    $(function(){
+    $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+    $(this).addClass('current');
+    }
+    });
+    });
+
+  </script>
+
+
+</head>
+
+<body>
+	<div id="wrapper"> 
+		<div id="header">
+			<div id= "logo">
+				<li>
+		     		<a href="splash.html"><img src="images/logo.png" alt="Dawg Talk logo"></a>  
+		    	</li>
+			</div>
+			
+			
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a class="home" href="index.html"><strong>Home</strong></a></li>
+				<li><a class="about" href="about.html">About</a></li>
+				<li><a class="community" href="community.html">Community</a></li>
+				<li><a class="testimonials" href="testimonials.html">Testimonials</a></li>
+				<li><a class="shop" href="shop.html">Shop</a></li>
+				
+			</ul>
+		</div>
+		<div class="callbacks_container">
+		  <ul class="rslides" id="slider4">
+		    <li>
+		      <img src="images/first.jpg" alt="">
+		      <p class="caption">Collar and app technology.</p>
+		    </li>
+		    <li>
+		      <img src="images/second.jpg" alt="">
+		      <p class="caption">Join the community.</p>
+		    </li>
+		    <li>
+		      <img src="images/third.jpg" alt="">
+		      <p class="caption">Connect with other users.</p>
+		    </li>
+		  </ul>
+		</div>
+
+		<div id="welcomecontent">
+			<img src="images/iphone.jpg" alt="What it solves" title="What it solves" usemap="#iphone">
+			<map name="iphone">
+  			<area shape="rect" coords="900,300,120,200" 
+  			href="about.html" title="Take you to the about page">
+  			</map>
+			<img src="images/slogan.jpg" alt="Dawg Talk slogan" title="Dawg Talk slogan" usemap="#slogan">
+			<map name="slogan">
+  			<area shape="rect" coords="820,220,150,100" href="shop.html" title="Take you to the online shop">
+  			</map>
+		</div>  
+			
+		
+		
+
+		
+
+		<script>
+ 			 $(function() {
+    			$(".rslides").responsiveSlides();
+  			});
+		</script>
+			
+		<div id="footer">
+			<div id="social">
+				<a id="twitter-button" href="http://www.twitter.com"><span>Twitter</span></a><a id="facebook-button" href="http://www.facebook.com"><span>Facebook</span></a></a><a id="instagram-button" href="http://www.instagram.com"><span>Instagram</span></a></div>
+			<p>&copy;Dawg Talk 2013</p>
+		</div>
+	</div>	
+</body>
+
+
+</html>
