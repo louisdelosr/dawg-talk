@@ -6,7 +6,7 @@ This is a repository of a 3-person group project I did in University of Toronto'
 - Team Responsibilities: Scheduling, Designing, Presentation, Coding
 
 Summary:
-- Created a promotional website for a makebelieve product.
+- Created a promotional website for a make believe product.
 
 Courses Involved: 
 
