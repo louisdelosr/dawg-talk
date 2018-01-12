@@ -136,7 +136,7 @@ p{
 
 
 html {
-  background: #e9e9e9 url("images/bg2.png") repeat;
+  background: #e9e9e9 url("../images/bg2.png") repeat;
 }
 
 
@@ -302,8 +302,7 @@ h3 {
   overflow: hidden;
   text-decoration: none;
   height: 61px;
-  width: 38px;
-  background: transparent url("images/themes.gif") no-repeat left top;
+  background: transparent url("../images/themes.gif") no-repeat left top;
   margin-top: -45px;
   }
 
