@@ -194,19 +194,20 @@ h2 {
             -webkit-border-radius: 0 .5em 0 0;
             -moz-border-radius: 0 .5em 0 0;
             border-radius: 0 .5em 0 0;
-            background: #e9e9e9;
+            background: #e9e9e9 url("images/bg2.png") repeat;
         }
         #cart_items {
             height: 242px;
-            width: 483px;
+            width: 999999px;
             position: relative;
+            overflow: hidden;
             padding: 0 0 0 2px;
             z-index: 0;
             cursor: e-resize;
             border-width: 0 2px;
         }
         .back {
-            background: #e9e9e9;
+            background: #e9e9e9 url("images/bg2.png") repeat;
         }
         #navigate {
             width: 463px;
@@ -275,6 +276,10 @@ h2 {
     var total_price = 0;
     $(document).ready(function() {
 
+        if (total_items == 0) {
+          document.getElementById('btn_prev').style.display = 'none';
+          document.getElementById('btn_next').style.display = 'none';
+        } 
         $(".item").draggable({
             revert: true            
         });
@@ -307,6 +312,10 @@ h2 {
                 // expand cart items
                 if (total_items > 4) {
                     $("#cart_items").animate({width: "+=120"}, 'slow');
+                }
+                if (total_items > 3) {
+                  document.getElementById('btn_prev').style.display = 'initial';
+                  document.getElementById('btn_next').style.display = 'initial';
                 }
             }
         });
